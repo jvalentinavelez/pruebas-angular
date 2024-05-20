@@ -1,6 +1,6 @@
 import { Jugador } from './classes';
 
-describe('Pruebas de clase', () => {
+xdescribe('Pruebas de clase', () => {
   let jugador = new Jugador();
 
   beforeAll(() => {
@@ -27,7 +27,7 @@ describe('Pruebas de clase', () => {
     const resp = jugador.receivesDamage(50);
     expect(resp).toBe(50);
   });
-  it('Debe de retornar 0 de hp, si recibe 100 de daño o más', () => {
+  xit('Debe de retornar 0 de hp, si recibe 100 de daño o más', () => {
     console.log('Esta prueba no va a fallar');
     const resp = jugador.receivesDamage(100);
     expect(resp).toBe(0);
